@@ -39,24 +39,24 @@ When the game starts:
 The player interacts with the game by entering simple text commands:
 
 
-Command                      	Description
+Command -------------------------> Description
 
 
-look 				Describes the current room and its contents.
+look ----------------------------> Describes the current room and its contents.
 
-stats				Displays the player's health and strength.
+stats ---------------------------> Displays the player's health and strength.
 
-inventory			Shows the player's current inventory.
+inventory -----------------------> Shows the player's current inventory.
 
-move <direction> 		Moves the player in the specified direction (up, down, left, or right).
+move <direction> ----------------> Moves the player in the specified direction (up, down, left, or right).
 
-pickup 				Picks up items in the room (if available).
+pickup --------------------------> Picks up items in the room (if available).
 	
-attack 				Fights the creature in the room.
+attack --------------------------> Fights the creature in the room.
 
-map 				Displays the dungeon map layout.
+map -----------------------------> Displays the dungeon map layout.
 
-exit				Exits the game.
+exit ----------------------------> Exits the game.
 
 
 Game Progression
@@ -70,7 +70,8 @@ Game Progression
 	Locked Rooms: Room 9 (Treasure Room) requires the Door Key to enter.
 
 
-				Winning the Game
+				
+Winning the Game
 
 To win:
 
@@ -88,26 +89,27 @@ To win:
 
 The project is organized into modular files for better readability and maintainability.
 
-				Main Files
+				
+Main Files
 
 
-File				Description
+File ----------------------------> Description
 
-main.c				Entry point of the game. Initializes the game and starts the main game loop.
+main.c --------------------------> Entry point of the game. Initializes the game and starts the main game loop.
 
-game.c/game.h			Handles the core game logic, processes commands, and manages the game loop.
+game.c/game.h -------------------> Handles the core game logic, processes commands, and manages the game loop.
 
-map.c/map.h			Sets up the dungeon map, room connections, and initial placement of entities.
+map.c/map.h ---------------------> Sets up the dungeon map, room connections, and initial placement of entities.
 
-room.c/room.h			Manages room descriptions, traps, creatures, and items within rooms.
+room.c/room.h -------------------> Manages room descriptions, traps, creatures, and items within rooms.
 
-player.c/player.h		Manages the player, including health, strength, inventory, and stats.
+player.c/player.h ---------------> Manages the player, including health, strength, inventory, and stats.
 
-creature.c/creature.h		Manages creature behaviors and battle mechanics.
+creature.c/creature.h -----------> Manages creature behaviors and battle mechanics.
 
-item.c/item.h			Handles items and their effects on the player.
+item.c/item.h -------------------> Handles items and their effects on the player.
 
-trap.c/trap.h			Manages traps and their effects when activated.
+trap.c/trap.h -------------------> Manages traps and their effects when activated.
 
 
 Core Functions
@@ -142,15 +144,8 @@ Core Functions
 
 4. Game Mechanics
 
-				Map Layout
 
-The dungeon consists of a 3x3 grid of rooms:
-
-Room1 --- Room2 --- Room3
-  |        |         |
-Room4 --- Room5 --- Room6
-  |        |         |
-Room7 --- Room8 --- Room9
+Map Layout
 
 Each room may contain:
 
@@ -161,7 +156,7 @@ Each room may contain:
 	Traps: Hazards that deal damage to the player.
 
 
-				Combat System
+Combat System
 
 
 When the player encounters a creature:
@@ -196,18 +191,19 @@ Inventory System
 
 5. How to Run the Game
 
-				Compilation
+
+Compilation
 
 To compile the game, use the following command:
 
-	gcc -o dungeon main.c game.c map.c room.c player.c creature.c item.c trap.c
+	gcc -o game main.c game.c map.c room.c player.c creature.c item.c trap.c
 
 
-				Running the Game
+Running the Game
 
 Run the compiled executable:
 
-	./dungeon
+	./game.exe
 
 Playing the Game
 
@@ -218,13 +214,6 @@ Follow the on-screen instructions and enter commands to explore the dungeon, def
 6. Example Gameplay
 
 Welcome to the Dungeon Adventure Game!
-
-Map:
-Room1 --- Room2 --- Room3
-  |        |         |
-Room4 --- Room5 --- Room6
-  |        |         |
-Room7 --- Room8 --- Room9
 
 Objective: Find the treasure chest to win the game!
 
