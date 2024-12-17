@@ -11,8 +11,8 @@ void initPlayer(Player *player, const char *name, int inventoryCapacity) {
     player->name[sizeof(player->name) - 1] = '\0';  // Null-terminate for safety
     
     // Initialize health and strength (optional)
-    player->health = 500;
-    player->strength = 30;
+    player->health = 100;
+    player->strength = 10;
 
     player->inventoryCapacity = inventoryCapacity;  // Set inventory capacity
     player->inventory = malloc(inventoryCapacity * sizeof(Item*));  // Allocate memory for items
