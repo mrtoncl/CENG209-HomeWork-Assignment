@@ -39,7 +39,8 @@ When the game starts:
 The player interacts with the game by entering simple text commands:
 
 
-Command -------------------------> Description
+Command ------------------------- Description
+
 
 
 look ----------------------------> Describes the current room and its contents.
@@ -93,7 +94,9 @@ The project is organized into modular files for better readability and maintaina
 Main Files
 
 
-File ----------------------------> Description
+File ---------------------------- Description
+
+
 
 main.c --------------------------> Entry point of the game. Initializes the game and starts the main game loop.
 
