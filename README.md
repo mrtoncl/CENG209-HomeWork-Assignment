@@ -220,23 +220,41 @@ Welcome to the Dungeon Adventure Game!
 
 Objective: Find the treasure chest to win the game!
 
+
 Enter command: look
+
 You're in: Room 1 - A quiet chamber.
+
 There is a creature in this room!
+
 Creature: Goblin
+
 Health: 20
+
 Attack Power: 5
 
+
+
 Enter command: attack
+
 You attack the Goblin!
+
 The Goblin attacks you!
+
 Your Health: 95 | Goblin Health: 10
 
+
+
 Enter command: pickup
+
 There is nothing to pick up here.
 
+
+
 Enter command: move right
+
 You're in: Room 2 - A dimly lit hallway.
+
 Growling sounds are heard!?
 
 -------------------------------------------------------------------------------------------------------------------
